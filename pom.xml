@@ -30,12 +30,6 @@
               <groupId>com.github.spotbugs</groupId>
               <artifactId>spotbugs-maven-plugin</artifactId>
               <version>3.1.12.3-SNAPSHOT</version>
-              <classFilesDirectory>${project.build.outputDirectory}</classFilesDirectory>
-              <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
-              <spotbugsXmlOutputDirectory>${project.build.directory}</spotbugsXmlOutputDirectory>
-              <testClassFilesDirectory>${project.build.testOutputDirectory}</testClassFilesDirectory>
-              <xmlOutput>true</xmlOutput>
-              <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -90,12 +84,6 @@
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
           <version>3.1.12.3-SNAPSHOT</version>
-          <classFilesDirectory>${project.build.outputDirectory}</classFilesDirectory>
-          <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
-          <spotbugsXmlOutputDirectory>${project.build.directory}</spotbugsXmlOutputDirectory>
-          <testClassFilesDirectory>${project.build.testOutputDirectory}</testClassFilesDirectory>
-          <xmlOutput>true</xmlOutput>
-          <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
         </plugin>
       </plugins>
     </reporting>
