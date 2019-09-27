@@ -7,16 +7,6 @@
     <packaging>war</packaging>
     <version>6.0.1</version>
 	
-    <reporting>
-      <plugins>
-        <plugin>
-          <groupId>com.github.spotbugs</groupId>
-          <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>3.1.12.3-SNAPSHOT</version>
-        </plugin>
-      </plugins>
-    </reporting>
-
     <!-- Shared version number properties -->
     <properties>
         <org.springframework.version>3.2.4.RELEASE</org.springframework.version>
@@ -36,6 +26,11 @@
             </resource>
         </resources>
         <plugins>
+            <plugin>
+              <groupId>com.github.spotbugs</groupId>
+              <artifactId>spotbugs-maven-plugin</artifactId>
+              <version>3.1.12.3-SNAPSHOT</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -82,6 +77,16 @@
             </plugin>            
         </plugins>
     </build>
+	
+    <reporting>
+      <plugins>
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <version>3.1.12.3-SNAPSHOT</version>
+        </plugin>
+      </plugins>
+    </reporting>
 
     <dependencies>
         <dependency>
