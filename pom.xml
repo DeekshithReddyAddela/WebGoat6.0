@@ -6,6 +6,21 @@
     <artifactId>WebGoat</artifactId>
     <packaging>war</packaging>
     <version>6.0.1</version>
+	
+    <reporting>
+      <plugins>
+        <plugin>
+          <groupId>com.github.spotbugs</groupId>
+          <artifactId>spotbugs-maven-plugin</artifactId>
+          <version>3.1.12.3-SNAPSHOT</version>
+          <configuration>
+            <xmlOutput>true</xmlOutput>
+            <!-- Optional directory to put spotbugs xdoc xml report -->
+            <xmlOutputDirectory>/var/jenkins_home/workspace/webgoat</xmlOutputDirectory>
+          </configuration>
+        </plugin>
+      </plugins>
+    </reporting>
 
     <!-- Shared version number properties -->
     <properties>
